@@ -1,0 +1,200 @@
+body{
+    margin: 0;
+    text-align: center;
+    background-color: #ffc971;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HERO */
+
+#hero{
+    background-image: url("images/india.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    text-shadow: 0px 0px 5px black;
+}
+
+.text-header{
+    background-color: rgba(255, 182, 39, 0.85);
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+h2{
+    width: 80%;
+    max-width: 800px;
+}
+
+/* CONTENT */
+
+#content{
+    padding: 30px 20px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+/* FLIP CARDS */
+
+.place-card{
+    width: 250px;
+    height: 300px;
+    perspective: 1000px;
+}
+
+.card-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.place-card:hover .card-inner{
+    transform: rotateY(180deg) scale(1.1);
+}
+
+.card-front,
+.card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    backface-visibility: hidden;
+}
+
+.card-front{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+    text-shadow: 0px 0px 5px black;
+
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+}
+
+.card-front h4{
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    margin: 0;
+    padding: 12px;
+}
+
+.card-back{
+    background-color: #e2711d;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 20px;
+    box-sizing: border-box;
+
+    transform: rotateY(180deg);
+
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+}
+
+.card-back p{
+    line-height: 1.5;
+}
+
+/* IMAGES */
+
+.tajmahal{
+    background-image: url("images/tajmahal.jpg");
+}
+
+.jaipur{
+    background-image: url("images/jaipur.jpg");
+}
+
+.kerala{
+    background-image: url("images/kerala.jpg");
+}
+
+/* GUIDE SECTION */
+
+/* GUIDE CARD */
+
+#guide-container{
+    display: flex;
+    width: 70%;
+    max-width: 800px;
+
+    margin: 50px auto;
+    padding: 15px;
+
+    align-items: center;
+    gap: 20px;
+
+    background-color: #e2711d;
+    color: #ffc971;
+
+    border: 5px solid #cc5803;
+    border-radius: 15px;
+
+    text-shadow: 0px 0px 2px black;
+
+    transition: all 0.4s ease;
+}
+
+#guide-container:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 12px 25px rgba(0,0,0,0.35);
+}
+
+/* GUIDE IMAGE */
+
+#guide-image{
+    width: 200px;
+    height: 200px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+    border: 3px solid #ffc971;
+
+    transition: transform 0.4s ease;
+}
+
+/* IMAGE ZOOMS WHEN CARD IS HOVERED */
+
+#guide-container:hover #guide-image{
+    transform: scale(1.08);
+}
+
+/* GUIDE TEXT */
+
+#guide-container h3{
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+#guide-container p{
+    line-height: 1.6;
+}
+
+#guide-container h4{
+    margin-bottom: 0;
+    font-style: italic;
+}
