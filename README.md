@@ -1,19 +1,36 @@
 # Hometown Homepage – Explore India
 
-This project is a travel-inspired homepage that highlights some of India's most iconic destinations: the Taj Mahal, Jaipur, and Kerala. The website features interactive CSS flip cards, hover animations, a hero section with a scenic background, and a personal guide card introducing the local guide.
+A travel-inspired homepage showcasing India's rich culture and iconic destinations using HTML and CSS.
+
+## Live Demo
+
+🌐 View the project here:
+
+**https://chimerical-crisp-613228.netlify.app/**
 
 ## Features
 
-- Responsive layout using Flexbox
-- Hero section with background image
-- Interactive flip cards for destinations
-- Smooth CSS hover animations
+- Hero section with a scenic India background
+- Interactive destination flip cards
+- CSS hover animations and transitions
 - Personal guide profile section
-- Built entirely with HTML and CSS (no JavaScript)
+- Responsive Flexbox layout
+- Built with HTML5 and CSS3 only
 
 ## Technologies Used
 
 - HTML5
 - CSS3
 - Flexbox
-- CSS Transforms & Transitions
+- CSS Transforms
+- CSS Transitions
+
+## Destinations Featured
+
+- Taj Mahal
+- Jaipur
+- Kerala
+
+## Author
+
+**Sai Sanjana Kambalapally**
